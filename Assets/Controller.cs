@@ -7,8 +7,9 @@ using UnityEngine.UI;
 
 public class Controller : MonoBehaviour
 {
-    private ClothePiece[] clothes = ClothesFactory.GetClothes();
+    private readonly ClothePiece[] clothes = ClothesFactory.GetClothes();
     private int clothePieceId;
+    private bool fuckedUp;
     
     // Start is called before the first frame update
     void Start()
@@ -21,5 +22,14 @@ public class Controller : MonoBehaviour
     {
         var imagePath = clothes[clothePieceId].ImagePath;
         GetComponent<Image>().sprite = Resources.Load<Sprite>(imagePath);
+    }
+
+    public void NextImage()
+    {
+        if (clothePieceId == clothes.Length - 1)
+            clothePieceId = 0;
+        else
+            clothePieceId++;
+        SetImage();
     }
 }

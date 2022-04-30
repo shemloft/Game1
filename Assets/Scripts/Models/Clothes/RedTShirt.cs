@@ -2,7 +2,7 @@
 {
 	public class RedTShirt : ClothePiece
 	{
-		public override string ImagePath => "red_tshirt.png";
+		public override string ImagePath => "red_tshirt";
 
 		protected override LaundryProgram Program => new()
 		{
