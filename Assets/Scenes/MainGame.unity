@@ -343,7 +343,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_IsOn: 0
+  m_IsOn: 1
 --- !u!1 &287427422
 GameObject:
   m_ObjectHideFlags: 0
@@ -1167,7 +1167,7 @@ GameObject:
   - component: {fileID: 953939849}
   - component: {fileID: 953939850}
   m_Layer: 0
-  m_Name: BlackToggle
+  m_Name: DarkToggle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1241,7 +1241,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!1 &955120114
 GameObject:
   m_ObjectHideFlags: 0
@@ -2006,7 +2006,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1668463576
 RectTransform:
   m_ObjectHideFlags: 0
